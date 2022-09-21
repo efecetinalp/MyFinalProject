@@ -1,4 +1,7 @@
-﻿using Entities.Concrete;
+﻿using Business.Abstract;
+using Business.Concrete;
+using DataAccess.Concrete.EntityFramework;
+using Entities.Concrete;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using System.Collections.Generic;
@@ -9,12 +12,45 @@ namespace WebAPI.Controllers
     [ApiController]
     public class ProductsController : ControllerBase
     {
-        [HttpGet]
-        public List<Product> Get()
+        //IoC Container -- Inversion of control
+        IProductService _productService;
+
+        public ProductsController(IProductService productService)
         {
-            return new List<Product> { 
-                new Product { ProductId=1, CategoryId=1, ProductName ="product1", UnitPrice = 22},
-                new Product{ ProductId=2, CategoryId=2, ProductName ="product2", UnitPrice=33}};
+            _productService = productService;
+        }
+
+        [HttpGet("getall")]
+        public IActionResult GetAll()
+        {
+            var result = _productService.GetAll();
+            if (result.Success)
+            {
+                return Ok(result);
+            }
+            return BadRequest(result);
+        }
+
+        [HttpGet("getbyid")]
+        public IActionResult GetById(int id)
+        {
+            var result = _productService.GetById(id);
+            if (result.Success)
+            {
+                return Ok(result);
+            }
+            return BadRequest(result);
+        }
+
+        [HttpPost("add")]
+        public IActionResult Add(Product product)
+        {
+            var result = _productService.Add(product);
+            if (result.Success)
+            {
+                return Ok(result);
+            }
+            return BadRequest(result);
         }
     }
 }

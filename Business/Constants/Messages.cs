@@ -14,5 +14,7 @@ namespace Business.Constants
         public static string ProductsListed = "Products are listed successfully";
         public static string InvalidUnitPrice = "Unit price cannot be lover or equal to zero";
         public static string ProductCountOfCategoryError = "Max 10 products can be added on each category";
+        public static string ProductNameAlreadyExist = "This product name is already exist";
+        public static string CategoryLimitExceded = "Reached maximum category limit";
     }
 }

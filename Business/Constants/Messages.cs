@@ -16,5 +16,15 @@ namespace Business.Constants
         public static string ProductCountOfCategoryError = "Max 10 products can be added on each category";
         public static string ProductNameAlreadyExist = "This product name is already exist";
         public static string CategoryLimitExceded = "Reached maximum category limit";
+        public static string AuthorizationDenied = "No access to make this operation";
+        public static string UserRegistered = "User registered successfully";
+        public static string UserNotFound = "This user is not exists";
+        public static string PasswordError = "Password incorrect";
+        public static string SuccessfulLogin = "Success Log-in";
+        public static string UserAlreadyExists = "This user is already exists";
+        public static string AccessTokenCreated = "Token created successfully";
+
+
+
     }
 }

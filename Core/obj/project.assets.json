@@ -7733,7 +7733,8 @@
       "Autofac.Extensions.DependencyInjection >= 8.0.0",
       "Autofac.Extras.DynamicProxy >= 6.0.1",
       "FluentValidation >= 11.2.2",
-      "Microsoft.EntityFrameworkCore.SqlServer >= 5.0.0"
+      "Microsoft.EntityFrameworkCore.SqlServer >= 5.0.0",
+      "Microsoft.IdentityModel.Tokens >= 5.6.0"
     ]
   },
   "packageFolders": {
@@ -7799,6 +7800,10 @@
           "Microsoft.EntityFrameworkCore.SqlServer": {
             "target": "Package",
             "version": "[5.0.0, )"
+          },
+          "Microsoft.IdentityModel.Tokens": {
+            "target": "Package",
+            "version": "[5.6.0, )"
           }
         },
         "imports": [

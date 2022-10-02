@@ -37,18 +37,5 @@ namespace WebAPI.Controllers
             }
             return BadRequest(result);
         }
-
-        // add this operation to ICategoryService
-
-        //[HttpPost("add")]
-        //public IActionResult Add(Category category)
-        //{
-        //    var result = _categoryService.Add(category);
-        //    if (result.Success)
-        //    {
-        //        return Ok(result);
-        //    }
-        //    return BadRequest(result);
-        //}
     }
 }

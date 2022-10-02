@@ -73,3 +73,4 @@ C:\Users\Efe\source\repos\MyFinalProject\WebAPI\bin\Debug\net5.0\Microsoft.Exten
 C:\Users\Efe\source\repos\MyFinalProject\WebAPI\bin\Debug\net5.0\Microsoft.Extensions.Primitives.dll
 C:\Users\Efe\source\repos\MyFinalProject\WebAPI\bin\Debug\net5.0\System.Runtime.CompilerServices.Unsafe.dll
 C:\Users\Efe\source\repos\MyFinalProject\WebAPI\bin\Debug\net5.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+C:\Users\Efe\source\repos\MyFinalProject\WebAPI\bin\Debug\net5.0\Newtonsoft.Json.dll
